@@ -368,12 +368,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
     const isNameValid = validateField(userName, userName.value.trim().length >= 2);
     const isEmailValid = validateField(userEmail, validateEmail(userEmail.value.trim()));
     const isMessageValid = validateField(userMessage, userMessage.value.trim().length >= 8);
 
     if (!isNameValid || !isEmailValid || !isMessageValid) {
-      e.preventDefault();
       return;
     }
 
@@ -387,7 +387,34 @@ document.addEventListener('DOMContentLoaded', () => {
         <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path>
       </svg>
     `;
-    // Do NOT prevent default: let the browser POST directly to https://formsubmit.co/kingkhan121219@gmail.com
+    // Use Fetch API for AJAX submission
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        showToast('Thank you', 'Your message has been sent successfully.');
+        contactForm.reset();
+      } else {
+        showToast('Error', 'Oops! There was a problem sending your message.');
+      }
+    }).catch(error => {
+      showToast('Error', 'Oops! There was a problem sending your message.');
+    }).finally(() => {
+      // Reset button state
+      submitBtn.style.pointerEvents = 'auto';
+      submitBtn.style.opacity = '1';
+      submitBtn.innerHTML = `
+        <span>Send Message</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      `;
+    });
   });
 
   // ------------------------------------------------------------------------
