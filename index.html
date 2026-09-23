@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Salman Khan | Creative Freelancer, Web Designer & Digital Marketer</title>
+  <meta name="description" content="Official portfolio and blog of Salman Khan, a creative freelancer specializing in bespoke web design, UI/UX, content creation, and digital marketing.">
+  <meta name="keywords" content="Salman Khan, Web Designer, Freelance Developer, UI/UX Design, Content Creation, Digital Marketing, SEO Portfolio">
+  <meta name="author" content="Salman Khan">
+  <meta name="theme-color" content="#088f99">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Salman Khan | Creative Freelancer & Web Designer">
+  <meta property="og:description" content="Specializing in web design, content creation, and digital marketing to help your business grow and succeed.">
+  <meta property="og:image" content="salman-khan.jpg">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Salman Khan | Creative Freelancer & Web Designer">
+  <meta name="twitter:description" content="Specializing in web design, content creation, and digital marketing.">
+  <meta name="twitter:image" content="salman-khan.jpg">
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Salman Khan",
+    "jobTitle": "Creative Freelancer & Web Designer",
+    "description": "Specializing in web design, UI/UX, content creation, and digital marketing.",
+    "url": "https://salmankhan.design",
+    "knowsAbout": ["Web Design", "Content Creation", "Digital Marketing", "Graphic Design", "SEO"],
+    "sameAs": [
+      "https://github.com",
+      "https://linkedin.com",
+      "https://twitter.com",
+      "https://dribbble.com"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Salman Khan Home">
+        <span class="logo-title">Salman Khan</span>
+        <span class="logo-subtitle">Portfolio &amp; Blog</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-link active">Home</a></li>
+        <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#blog" class="mobile-link">Blog</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-greeting">Hi, I'm Salman Khan</h1>
+        <h2 class="hero-headline">Creative Freelancer Ready to Help You Succeed</h2>
+        <p class="hero-description">
+          I specialize in web design, content creation, and digital marketing. Let's work together to bring your ideas to life!
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="#portfolio" class="btn btn-outline">View My Work</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img 
+            src="salman-khan.jpg" 
+            alt="Salman Khan - Creative Freelancer" 
+            class="hero-img"
+            width="540" 
+            height="520"
+            loading="eager"
+            fetchpriority="high"
+          >
+          <div class="hero-badge">
+            <span class="pulse-dot"></span> Available for new projects
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="featured-section" id="portfolio">
+    <div class="container">
+      <div class="section-heading">
+        <h2 class="section-title">Featured Projects</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Modern Website Design -->
+        <article class="project-card" data-project="web-design">
+          <div class="card-image-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+              alt="Modern Website Design on Laptop"
+              loading="lazy"
+              width="360"
+              height="230"
+            >
+            <div class="card-overlay">
+              <span class="overlay-text">View Case Study</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Modern Website Design</h3>
+          </div>
+        </article>
+
+        <!-- Project 2: Branding & Logo Design -->
+        <article class="project-card" data-project="branding">
+          <div class="card-image-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=800&q=80" 
+              alt="Branding & Logo Design mockups on workspace"
+              loading="lazy"
+              width="360"
+              height="230"
+            >
+            <div class="card-overlay">
+              <span class="overlay-text">View Case Study</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Branding &amp; Logo Design</h3>
+          </div>
+        </article>
+
+        <!-- Project 3: Social Media Campaign -->
+        <article class="project-card" data-project="social-media">
+          <div class="card-image-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" 
+              alt="Social Media Campaign and live metrics on mobile phone"
+              loading="lazy"
+              width="360"
+              height="230"
+            >
+            <div class="card-overlay">
+              <span class="overlay-text">View Case Study</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Social Media Campaign</h3>
+          </div>
+        </article>
+
+        <!-- Project 4: Content Writing -->
+        <article class="project-card" data-project="content-writing">
+          <div class="card-image-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" 
+              alt="Content Writing notebook, coffee cup, and desk layout"
+              loading="lazy"
+              width="360"
+              height="230"
+            >
+            <div class="card-overlay">
+              <span class="overlay-text">View Case Study</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Content Writing</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two-Column Main Area: (Left: Services & Blog) + (Right: About & Contact) -->
+  <main class="main-content-section" id="services">
+    <div class="container main-layout-grid">
+      
+      <!-- LEFT COLUMN -->
+      <div class="layout-left-column">
+        
+        <!-- My Skills & Services Sub-Section -->
+        <section class="services-subblock">
+          <div class="section-heading small-heading">
+            <h2 class="section-title">My Skills &amp; Services</h2>
+            <span class="section-line"></span>
+          </div>
+
+          <div class="services-list-grid">
+            <!-- Service 1: Web Design -->
+            <div class="service-chip-card">
+              <div class="service-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="service-text">
+                <h3 class="service-name">Web Design</h3>
+                <p class="service-desc">Custom Websites &amp; UI/UX</p>
+              </div>
+            </div>
+
+            <!-- Service 2: Content Creation -->
+            <div class="service-chip-card">
+              <div class="service-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div class="service-text">
+                <h3 class="service-name">Content Creation</h3>
+                <p class="service-desc">Blog Posts &amp; Copywriting</p>
+              </div>
+            </div>
+
+            <!-- Service 3: Digital Marketing -->
+            <div class="service-chip-card">
+              <div class="service-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <div class="service-text">
+                <h3 class="service-name">Digital Marketing</h3>
+                <p class="service-desc">SEO &amp; Social Media</p>
+              </div>
+            </div>
+
+            <!-- Service 4: Graphic Design -->
+            <div class="service-chip-card">
+              <div class="service-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m4.93 4.93 4.24 4.24"></path>
+                  <path d="m14.83 9.17 4.24-4.24"></path>
+                  <path d="m14.83 14.83 4.24 4.24"></path>
+                  <path d="m9.17 14.83-4.24 4.24"></path>
+                  <circle cx="12" cy="12" r="4"></circle>
+                </svg>
+              </div>
+              <div class="service-text">
+                <h3 class="service-name">Graphic Design</h3>
+                <p class="service-desc">Logos &amp; Visual Identity</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Latest from My Blog Sub-Section -->
+        <section class="blog-subblock" id="blog">
+          <div class="section-heading small-heading">
+            <h2 class="section-title">Latest from My Blog</h2>
+            <span class="section-line"></span>
+          </div>
+
+          <div class="blog-grid">
+            <!-- Blog Card 1 -->
+            <article class="blog-card" data-blog-id="1">
+              <div class="blog-img-box">
+                <img 
+                  src="https://images.unsplash.com/photo-1581291518655-9523c932edcf?auto=format&fit=crop&w=600&q=80" 
+                  alt="Monitor displaying responsive web layout"
+                  loading="lazy"
+                  width="260"
+                  height="160"
+                >
+              </div>
+              <div class="blog-body">
+                <h3 class="blog-title">5 Tips for a Better Website</h3>
+                <time class="blog-date" datetime="2024-03-15">March 15, 2024</time>
+                <button class="btn btn-sm btn-primary read-blog-btn" aria-label="Read 5 Tips for a Better Website">Read More</button>
+              </div>
+            </article>
+
+            <!-- Blog Card 2 -->
+            <article class="blog-card" data-blog-id="2">
+              <div class="blog-img-box">
+                <img 
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
+                  alt="Professional woman working at modern office desk"
+                  loading="lazy"
+                  width="260"
+                  height="160"
+                >
+              </div>
+              <div class="blog-body">
+                <h3 class="blog-title">How to Boost Your Brand</h3>
+                <time class="blog-date" datetime="2024-02-28">Feb 28, 2024</time>
+                <button class="btn btn-sm btn-primary read-blog-btn" aria-label="Read How to Boost Your Brand">Read More</button>
+              </div>
+            </article>
+
+            <!-- Blog Card 3 -->
+            <article class="blog-card" data-blog-id="3">
+              <div class="blog-img-box">
+                <img 
+                  src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=600&q=80" 
+                  alt="Open book and notes with aromatic coffee"
+                  loading="lazy"
+                  width="260"
+                  height="160"
+                >
+              </div>
+              <div class="blog-body">
+                <h3 class="blog-title">The Power of Great Copywriting</h3>
+                <time class="blog-date" datetime="2024-02-10">February 10, 2024</time>
+                <button class="btn btn-sm btn-primary read-blog-btn" aria-label="Read The Power of Great Copywriting">Read More</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN (About Me & Contact) -->
+      <aside class="layout-right-column">
+        
+        <!-- About Me Card Section -->
+        <section class="about-card-box">
+          <div class="about-image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=700&q=80" 
+              alt="Salman Khan working at laptop in creative studio" 
+              class="about-img"
+              loading="lazy"
+              width="450" 
+              height="220"
+            >
+          </div>
+          <div class="about-content">
+            <h2 class="about-title">About Me</h2>
+            <h3 class="about-subheadline">Experienced Freelancer Dedicated to Your Success</h3>
+            <p class="about-text">
+              With over 8 years of experience, I'm passionate about helping businesses grow through creative solutions. Let's connect and make your project a reality.
+            </p>
+          </div>
+        </section>
+
+        <!-- Get In Touch Form Section -->
+        <section class="contact-card-box" id="contact">
+          <h2 class="contact-header-title">Get in Touch</h2>
+          <h3 class="contact-subheadline">Let's Work Together!</h3>
+
+          <form id="contactForm" class="contact-form" action="https://formsubmit.co/kingkhan121219@gmail.com" method="POST" novalidate>
+            <!-- FormSubmit.co Config for Gmail Delivery -->
+            <input type="hidden" name="_subject" value="New Portfolio Message for Salman Khan">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="form-group">
+              <label for="userName" class="form-label">Your Name</label>
+              <input 
+                type="text" 
+                id="userName" 
+                name="name" 
+                class="form-input" 
+                placeholder="e.g. Sarah Jenkins"
+                required
+                autocomplete="name"
+              >
+              <span class="error-msg" id="nameError">Please enter your name</span>
+            </div>
+
+            <div class="form-group">
+              <label for="userEmail" class="form-label">Your Email</label>
+              <input 
+                type="email" 
+                id="userEmail" 
+                name="email" 
+                class="form-input" 
+                placeholder="name@company.com"
+                required
+                autocomplete="email"
+              >
+              <span class="error-msg" id="emailError">Please enter a valid email address</span>
+            </div>
+
+            <div class="form-group">
+              <label for="userMessage" class="form-label">Message</label>
+              <textarea 
+                id="userMessage" 
+                name="message" 
+                class="form-textarea" 
+                rows="4" 
+                placeholder="Tell me about your project goals, timeline, and scope..."
+                required
+              ></textarea>
+              <span class="error-msg" id="messageError">Please enter a brief message</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitBtn">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </section>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-title">Salman Khan</span>
+        <p class="footer-bio">Helping visionary brands, startups, and businesses thrive with purpose-built digital experiences.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Featured Projects</a></li>
+          <li><a href="#services">Skills &amp; Services</a></li>
+          <li><a href="#blog">Blog Articles</a></li>
+          <li><a href="#contact">Get in Touch</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social-group">
+        <h4 class="footer-col-title">Connect</h4>
+        <div class="social-icons">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" aria-label="Dribbble" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path>
+              <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></path>
+              <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container bottom-container">
+        <p>&copy; 2024 Salman Khan. All rights reserved. Designed with precision &amp; care.</p>
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card">
+      <button class="modal-close" id="closeProjectModal" aria-label="Close modal">&times;</button>
+      <div class="modal-image-container">
+        <img id="modalImg" src="" alt="Project Preview">
+      </div>
+      <div class="modal-content-body">
+        <span class="modal-tag" id="modalTag">Category</span>
+        <h3 class="modal-title" id="modalTitle">Project Title</h3>
+        <p class="modal-description" id="modalDescription">Detailed case study description goes here.</p>
+        <div class="modal-meta-grid">
+          <div><strong>Client:</strong> <span id="modalClient">Enterprise Client</span></div>
+          <div><strong>Timeline:</strong> <span id="modalTimeline">4 Weeks</span></div>
+          <div><strong>Tools:</strong> <span id="modalTools">Figma, HTML5, CSS3, JavaScript</span></div>
+        </div>
+        <div class="modal-actions">
+          <a href="#contact" class="btn btn-primary" id="modalCta">Discuss Similar Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Reading Modal -->
+  <div class="modal-backdrop" id="blogModal" role="dialog" aria-modal="true" aria-labelledby="blogModalTitle" hidden>
+    <div class="modal-card blog-modal-card">
+      <button class="modal-close" id="closeBlogModal" aria-label="Close article modal">&times;</button>
+      <div class="blog-modal-header">
+        <span class="blog-category" id="blogModalCategory">Design Strategy</span>
+        <h2 class="blog-modal-title" id="blogModalTitle">5 Tips for a Better Website</h2>
+        <div class="blog-meta-bar">
+          <span id="blogModalDate">March 15, 2024</span> &bull; 
+          <span id="blogModalReadTime">4 min read</span> &bull; 
+          <span>By Salman Khan</span>
+        </div>
+      </div>
+      <div class="blog-modal-body" id="blogModalBody">
+        <!-- Dynamic rich content inserted via JS -->
+      </div>
+      <div class="blog-modal-footer">
+        <button class="btn btn-outline" id="closeBlogBtn">Close Article</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Alert -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="assertive">
+    <div class="toast-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <div class="toast-message">
+      <strong id="toastTitle">Message Sent!</strong>
+      <p id="toastBody">Thanks for reaching out. Salman will contact you shortly.</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
