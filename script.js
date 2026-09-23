@@ -344,6 +344,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 4500);
   }
 
+  // Allow clicking anywhere on the popup/backdrop to dismiss it early
+  toastNotification.addEventListener('click', () => {
+    toastNotification.classList.remove('show');
+    if (toastTimer) clearTimeout(toastTimer);
+  });
+
   function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());

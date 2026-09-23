@@ -1159,33 +1159,40 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: flex-end;
 }
 
-/* Toast */
+/* Centered Popup Notification */
 .toast-notification {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background-color: var(--dark-navy);
-  color: #ffffff;
-  padding: 1rem 1.4rem;
-  border-radius: var(--radius-md);
+  top: 50%;
+  left: 50%;
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-lg);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.9rem;
-  box-shadow: var(--shadow-lg);
-  z-index: 2000;
-  transform: translateY(120px);
+  justify-content: center;
+  text-align: center;
+  gap: 1.25rem;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15), 0 0 0 100vw rgba(15, 23, 42, 0.65);
+  z-index: 9999;
+  transform: translate(-50%, -40%) scale(0.95);
   opacity: 0;
-  transition: transform var(--transition-smooth), opacity var(--transition-smooth);
+  pointer-events: none;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+  width: 90%;
+  max-width: 380px;
 }
 
 .toast-notification.show {
-  transform: translateY(0);
+  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
+  pointer-events: auto;
 }
 
 .toast-icon {
-  width: 32px;
-  height: 32px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background-color: #3b82f6;
   color: #ffffff;
@@ -1193,16 +1200,24 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+}
+
+.toast-icon svg {
+  width: 36px;
+  height: 36px;
 }
 
 .toast-message strong {
-  font-size: 0.92rem;
+  font-size: 1.5rem;
   display: block;
+  color: var(--dark-heading);
+  margin-bottom: 0.5rem;
 }
 
 .toast-message p {
-  font-size: 0.82rem;
-  color: #cbd5e1;
+  font-size: 1rem;
+  color: var(--text-muted);
   margin: 0;
 }
 
