@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 653 173" width="653" height="173">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap');
+      .script-text {
+        font-family: 'Alex Brush', cursive;
+        font-size: 52px;
+        fill: #DF8F3B;
+      }
+      .serif-white {
+        font-family: 'Playfair Display', serif;
+        font-size: 44px;
+        font-weight: 700;
+        fill: #FBF6EE;
+      }
+      .serif-gold-italic {
+        font-family: 'Playfair Display', serif;
+        font-size: 44px;
+        font-weight: 700;
+        font-style: italic;
+        fill: #DF8F3B;
+      }
+    </style>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#17110C"/>
+      <stop offset="100%" stop-color="#291C10"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  
+  <!-- Cursive Top Line -->
+  <text x="36" y="58" class="script-text">Decorative</text>
+  
+  <!-- Serif Bottom Line -->
+  <text x="36" y="122">
+    <tspan class="serif-white">Leaf Shape MDF </tspan>
+    <tspan class="serif-gold-italic">Table Lamp</tspan>
+  </text>
+</svg>
